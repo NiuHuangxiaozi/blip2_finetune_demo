@@ -1,0 +1,3 @@
+models/blip2/
+finetuned_model/blip2_2_7b/
+dataset/m4_daily_decomposition/
