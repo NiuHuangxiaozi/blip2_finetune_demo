@@ -2,7 +2,7 @@
  * @Author: riverman nanjing.com
  * @Date: 2025-04-04 00:51:26
  * @LastEditors: riverman nanjing.com
- * @LastEditTime: 2025-04-04 10:37:16
+ * @LastEditTime: 2025-04-04 10:51:04
  * @FilePath: /wsj/bliptime/blip2_finetune_demo/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -48,7 +48,7 @@ conda create --name timedis python==3.10
 git clone git@github.com:NiuHuangxiaozi/blip2_finetune_demo.git
 ```
 ### 2.3 下载数据集
-访问南大云盘，然后下载zip文件到dataset路径下：
+访问南大云盘: https://box.nju.edu.cn/f/b7d4751352eb44a885de/，然后下载zip文件到dataset路径下：
 ```
 unzip m4_daily_decomposition.zip
 ```
