@@ -2,7 +2,7 @@
  * @Author: riverman nanjing.com
  * @Date: 2025-04-04 00:51:26
  * @LastEditors: riverman nanjing.com
- * @LastEditTime: 2025-04-04 01:03:50
+ * @LastEditTime: 2025-04-04 10:37:16
  * @FilePath: /wsj/bliptime/blip2_finetune_demo/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -48,7 +48,9 @@ conda create --name timedis python==3.10
 git clone git@github.com:NiuHuangxiaozi/blip2_finetune_demo.git
 ```
 ### 2.3 下载数据集
+访问南大云盘，然后下载zip文件到dataset路径下：
 ```
+unzip m4_daily_decomposition.zip
 ```
 ### 2.4 下载blip2_2.7b模型（推荐使用下面的方式，依次输入以下的命令）
 在命令行一次输入下面的指令
@@ -60,15 +62,11 @@ git clone git@github.com:NiuHuangxiaozi/blip2_finetune_demo.git
 5. 输入 huggingface-cli download --resume-download Salesforce/blip2-opt-2.7b --local-dir . --local-dir-use-symlinks False --resume-download，等待模型下载完毕
 
 ```
-### 2.5 下载数据集
-```
-
-```
-### 2.2 下载安装包
+### 2.5 下载安装包
 ```
 pip install -r requirements.txt 
 ```
-### 2.3 运行微调程序
+### 2.6 运行微调程序
 指定微调3轮，batchsize为16（进行调整占满整个GPU集群）
 ```
 bash finetune,sh
